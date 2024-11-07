@@ -134,6 +134,23 @@ console.log('______________________________');
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log('ESERCIZIO EXTRA 4');
 
+function maxShoppingCart(cart) {
+  const maxItem = { price: 0, name: '', id: '', quantity: 0 };
+  for (let i = 0; i < cart.length; i++) {
+    if (cart[i].price > maxItem.price) {
+      for (let key in cart[i]) {
+        maxItem[key] = cart[i][key];
+      }
+    }
+  }
+  return maxItem;
+}
+
+const maxCartItem = maxShoppingCart(shoppingCart);
+
+console.log(`L'oggetto più caro nel carrello è:`);
+console.log(maxCartItem);
+
 console.log('______________________________');
 
 /* EXTRA 5
@@ -142,6 +159,9 @@ console.log('______________________________');
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('ESERCIZIO EXTRA 5');
+
+console.log('______________________________');
 
 /* EXTRA 6
   Crea una funzione chiamata "loopUntil" che riceve un numero intero come parametro con valore tra 0 e 9.
