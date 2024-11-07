@@ -48,6 +48,57 @@ console.log('______________________________');
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log('ESERCIZIO EXTRA 2');
 
+// Array test
+const shoppingCart = [
+  {
+    price: 5,
+    name: 'penna',
+    id: '001',
+    quantity: 3,
+  },
+  {
+    price: 50,
+    name: 'tastiera',
+    id: '002',
+    quantity: 1,
+  },
+  {
+    price: 300,
+    name: 'monitor',
+    id: '003',
+    quantity: 1,
+  },
+  {
+    price: 10,
+    name: 'alimentatore',
+    id: '004',
+    quantity: 2,
+  },
+  {
+    price: 3,
+    name: 'gomma',
+    id: '005',
+    quantity: 1,
+  },
+  {
+    price: 20,
+    name: 'mouse',
+    id: '006',
+    quantity: 4,
+  },
+];
+
+function shoppingCartTotal(arr) {
+  let counter = 0;
+  for (let i = 0; i < arr.length; i++) {
+    counter += arr[i].price * arr[i].quantity;
+  }
+  return counter;
+}
+
+console.log(`Nel tuo carrello ci sono ${shoppingCart.length} oggetti`);
+console.log(`Il totale del carrello è: €${shoppingCartTotal(shoppingCart)}`);
+
 console.log('______________________________');
 
 /* EXTRA 3
@@ -56,6 +107,24 @@ console.log('______________________________');
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('ESERCIZIO EXTRA 3');
+
+const newItem = {
+  price: 30,
+  name: 'cuffie',
+  id: '007',
+  quantity: 1,
+};
+
+function addToShoppingCart(item) {
+  shoppingCart.push(item);
+  return shoppingCart.length;
+}
+
+console.log(
+  `Nel tuo carrello adesso ci sono ${addToShoppingCart(newItem)} oggetti`
+);
+console.log('______________________________');
 
 /* EXTRA 4
   Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
@@ -63,6 +132,9 @@ console.log('______________________________');
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('ESERCIZIO EXTRA 4');
+
+console.log('______________________________');
 
 /* EXTRA 5
   Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
