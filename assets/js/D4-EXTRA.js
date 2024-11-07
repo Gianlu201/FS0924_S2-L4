@@ -161,6 +161,13 @@ console.log('______________________________');
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log('ESERCIZIO EXTRA 5');
 
+function latestShoppingCart(arr) {
+  return arr[arr.length - 1];
+}
+
+console.log(`L'ultimo oggetto inserito nel carrello è:`);
+console.log(latestShoppingCart(shoppingCart));
+
 console.log('______________________________');
 
 /* EXTRA 6
@@ -169,12 +176,32 @@ console.log('______________________________');
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('ESERCIZIO EXTRA 6');
+
+let number8 = 6;
+
+function loopUntil(x) {
+  let counter = 0;
+  const myArr = [];
+  while (counter < 3) {
+    myArr.push(Math.floor(Math.random() * 10));
+    if (myArr[myArr.length - 1] > x) {
+      counter++;
+    }
+  }
+  return console.log(myArr);
+}
+
+loopUntil(number8);
+
+console.log('______________________________');
 
 /* EXTRA 7
   Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('ESERCIZIO EXTRA 7');
 
 /* EXTRA 8
   Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
