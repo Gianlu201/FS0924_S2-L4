@@ -1,3 +1,8 @@
+console.log('__________________________________________________');
+console.log('__________________________________________________');
+console.log('EXTRA');
+console.log(' ');
+
 // Esercizi aggiuntivi (facoltativi) per D4
 
 /* EXTRA 1
@@ -7,6 +12,33 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('ESERCIZIO EXTRA 1');
+
+let number7 = 6;
+const myArray2 = giveMeRandom(number7);
+
+function checkArray(arr) {
+  let counter = 0;
+  for (let i = 0; i < arr.length; i++) {
+    switch (true) {
+      case arr[i] < 5:
+        console.log(`${arr[i]} è minore di 5`);
+        break;
+      case arr[i] === 5:
+        console.log(`${arr[i]} è uguale a 5`);
+        break;
+      case arr[i] > 5:
+        console.log(`${arr[i]} è maggiore a 5`);
+        counter += arr[i];
+        break;
+    }
+  }
+  return console.log(`La somma dei numeri maggiori di 5 è: ${counter}`);
+}
+
+checkArray(myArray2);
+
+console.log('______________________________');
 
 /* EXTRA 2
   Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
@@ -14,6 +46,9 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('ESERCIZIO EXTRA 2');
+
+console.log('______________________________');
 
 /* EXTRA 3
   Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".

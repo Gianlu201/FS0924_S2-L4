@@ -197,12 +197,12 @@ console.log('------------------------------');
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log('ESERCIZIO 10');
 
-let number6 = 20;
+let number6 = 5;
 let myArray = [];
 
 function giveMeRandom(n) {
   const myNewArray = [];
-  for (let i = 0; i < number6; i++) {
+  for (let i = 0; i < n; i++) {
     let randomNumber = Math.floor(Math.random() * 11);
     myNewArray.push(randomNumber);
   }
@@ -211,5 +211,3 @@ function giveMeRandom(n) {
 
 myArray = giveMeRandom(number6);
 console.log(myArray);
-
-console.log('------------------------------');
