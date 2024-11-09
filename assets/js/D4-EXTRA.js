@@ -203,11 +203,68 @@ console.log('______________________________');
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log('ESERCIZIO EXTRA 7');
 
+const myArray3 = [1, 2, 3, 4, 5, 6, 7, 'a', 'b', 8, 9, 'c', 10];
+
+function sum(arr) {
+  let mySum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    mySum += arr[i];
+  }
+  return mySum;
+}
+
+function checkNumb(arr) {
+  let myArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === 'number') {
+      myArr.push(arr[i]);
+    }
+  }
+  return myArr;
+}
+
+function average(arr) {
+  const numArr = checkNumb(arr);
+  let mySum = sum(numArr);
+  return mySum / numArr.length;
+}
+
+console.log(myArray3);
+console.log(
+  "La media aritmetica dei numeri contenuti nell'array precedente è:"
+);
+console.log(average(myArray3));
+
+console.log('______________________________');
+
 /* EXTRA 8
   Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('ESERCIZIO EXTRA 8');
+
+const myArray4 = ['Nel', 'mezzo', 'del', 'cammin', 'di', 'nostra', 'vita'];
+
+function longest(arr) {
+  let leng = 0;
+  let word = '';
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > leng) {
+      word = arr[i];
+      leng = arr[i].length;
+    }
+  }
+
+  console.log(
+    `La parola più lunga è ${word} ed è composta da ${leng} caratteri`
+  );
+  return;
+}
+
+longest(myArray4);
+
+console.log('______________________________');
 
 /* EXTRA 9
   Crea una funzione per creare un filtro anti-spam per la tua casella email. La funzione riceve un parametro stringa chiamato "emailContent", e torna un valore booleano.
@@ -215,6 +272,9 @@ console.log('ESERCIZIO EXTRA 7');
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('ESERCIZIO EXTRA 8');
+
+console.log('______________________________');
 
 /* EXTRA 10
   Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
