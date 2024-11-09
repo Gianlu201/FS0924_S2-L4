@@ -272,7 +272,20 @@ console.log('______________________________');
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log('ESERCIZIO EXTRA 8');
+console.log('ESERCIZIO EXTRA 9');
+
+let emailContent = 'Nel mezzo del cammin di nostra vita';
+
+function spamDetector(str) {
+  let check = Math.max(str.indexOf('SPAM'), str.indexOf('SCAM'));
+  if (check < 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(spamDetector(emailContent));
 
 console.log('______________________________');
 
@@ -281,6 +294,22 @@ console.log('______________________________');
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('ESERCIZIO EXTRA 10');
+
+let selectedDay = '2024.11.1';
+
+function daysPassed(day) {
+  const myDay = new Date(day);
+  const today = new Date();
+
+  let delta = Math.floor((today - myDay) / 1000 / 60 / 60 / 24);
+
+  return delta;
+}
+
+console.log(daysPassed(selectedDay));
+
+console.log('______________________________');
 
 /* EXTRA 11
   Scrivi una funzione chiamata "matrixGenerator" che riceve come parametri due numeri interi, "x" e "y".
